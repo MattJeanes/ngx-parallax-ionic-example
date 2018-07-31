@@ -29,6 +29,8 @@ import { SupportPage } from '../pages/support/support';
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 
+import { ParallaxModule } from "ngx-parallax";
+
 
 @NgModule({
   declarations: [
@@ -46,10 +48,11 @@ import { UserData } from '../providers/user-data';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
   ],
   imports: [
     BrowserModule,
+    ParallaxModule,
     HttpModule,
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
